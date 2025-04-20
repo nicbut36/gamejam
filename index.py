@@ -119,7 +119,7 @@ while running:
             else:
                 if data['start_time'] is None:
                     data['start_time'] = current_check_time
-                elif not data['reported'] and (current_check_time - data['start_time']) >= 1:
+                elif not data['reported'] and (current_check_time - data['start_time']) >= 3:
                     game_over = True
                     game_finish_time = current_check_time - start_time - paused_duration
 
